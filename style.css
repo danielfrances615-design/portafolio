@@ -72,3 +72,51 @@ p { color: var(--text-dim); font-size: 1.1rem; margin-bottom: 30px; }
 .btn-main { background: white; color: var(--deep-blue); }
 .btn-secondary { background: transparent; color: white; border: 1px solid var(--glass-border); }
 .btn-main:hover { transform: scale(1.05); box-shadow: 0 0 20px rgba(255,255,255,0.2); }
+/* --- AJUSTES PARA MÓVILES --- */
+@media (max-width: 768px) {
+    /* Reducimos el tamaño de la letra para que no se corte */
+    h1 {
+        font-size: 2.2rem !important; 
+        line-height: 1.2;
+    }
+
+    p {
+        font-size: 0.95rem;
+    }
+
+    /* Hacemos que la tarjeta central ocupe más ancho en móviles */
+    .hero-container {
+        padding: 30px 20px;
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    /* La barra de navegación se adapta */
+    .nav-content {
+        padding: 10px 15px;
+    }
+
+    .nav-links {
+        gap: 10px;
+    }
+
+    .nav-links a {
+        font-size: 0.7rem; /* Letra más pequeña para que quepan todos los links */
+    }
+
+    /* Las secciones ocupan más espacio lateral */
+    .section-padding {
+        padding: 60px 5%;
+    }
+
+    /* Las cuadrículas de proyectos pasan a ser de 1 sola columna */
+    .grid-container {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    /* Desactivamos el movimiento 3D en móvil para evitar tirones */
+    .hero-container {
+        transform: none !important;
+    }
+}
