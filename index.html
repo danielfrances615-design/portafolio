@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistemas & Robótica | Profesional</title>
+    <title>Especialista en Sistemas & Infraestructura IT</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;500;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/606/606210.png">
 </head>
 <body>
+
     <div class="liquid-bg">
         <div class="blob-1"></div>
         <div class="blob-2"></div>
@@ -17,15 +19,82 @@
     <nav class="navbar">
         <div class="nav-content glass-effect">
             <div class="logo">TECH<span>ARCHITECT</span></div>
+            <ul class="nav-links">
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#experiencia">Trayectoria</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+            </ul>
         </div>
     </nav>
 
-    <header class="hero">
-        <div class="hero-card glass-effect">
-            <h1>Ingeniería de <span class="text-gradient">Sistemas</span></h1>
-            <p>Especialista en Hardware, Micro-soldadura y Redes.</p>
+    <header class="hero" id="home">
+        <div class="hero-card glass-effect" data-aos="zoom-out-up">
+            <div class="status-pill"><span class="dot"></span> Systems & Hardware Specialist</div>
+            <h1>Arquitectura de <span class="text-gradient">Sistemas Críticos</span></h1>
+            <p>Especialista en despliegue de redes de alta disponibilidad, micro-soldadura electrónica avanzada y administración de infraestructuras críticas.</p>
+            <div class="hero-btns">
+                <a href="#proyectos" class="btn-glow">Ver Laboratorio</a>
+                <a href="#experiencia" class="btn-outline">Trayectoria</a>
+            </div>
         </div>
     </header>
+
+    <section id="experiencia" class="section">
+        <h2 class="title" data-aos="fade-right">Experiencia Corporativa</h2>
+        <div class="timeline">
+            <div class="glass-card exp-box" data-aos="fade-up">
+                <div class="exp-header">
+                    <img src="https://via.placeholder.com/60/2563eb/ffffff?text=LT" alt="Llovitec" class="exp-img">
+                    <div>
+                        <h3>Senior Hardware Specialist | Llovitec</h3>
+                        <span class="sub">Microelectrónica & Gestión de Infraestructura</span>
+                    </div>
+                </div>
+                <p>Responsable del laboratorio de reparaciones complejas. Especialista en re-work de placas base, soldadura micro-SMD y diagnóstico osciloscópico. Gestión de flujos logísticos críticos y soporte técnico de Nivel 3 para dispositivos móviles de última generación y sistemas informáticos empresariales.</p>
+                <ul class="tags">
+                    <li>Micro-soldadura</li> <li>Diagnóstico Nivel 3</li> <li>Logística IT</li>
+                </ul>
+            </div>
+
+            <div class="glass-card exp-box" data-aos="fade-up" data-aos-delay="100">
+                <div class="exp-header">
+                    <img src="https://via.placeholder.com/60/06b6d4/ffffff?text=PB" alt="PCBox" class="exp-img">
+                    <div>
+                        <h3>Systems Engineer | PC Box Alcoy</h3>
+                        <span class="sub">Mantenimiento Proactivo & Consultoría IT</span>
+                    </div>
+                </div>
+                <p>Consultoría técnica avanzada para sector retail y corporativo. Despliegue de estaciones de trabajo de alto rendimiento, auditoría de hardware y optimización de sistemas operativos. Elaboración de presupuestos técnicos para infraestructuras de red escalables.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="proyectos" class="section">
+        <h2 class="title" data-aos="fade-right">Proyectos R&D (AlcoyBot)</h2>
+        <div class="grid">
+            <div class="glass-card project-card" data-aos="fade-up">
+                <div class="proj-img" style="background-image: url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=600');"></div>
+                <div class="proj-content">
+                    <h3>BioSync Automatización v2.0</h3>
+                    <p>Sistema inteligente de gestión hídrica basado en sensores de conductividad y algoritmos de riego predictivo.</p>
+                    <div class="materials">
+                        <span>Arduino Micro</span> <span>Humedad Suelo V2</span> <span>Bomba Peristáltica</span> <span>LCD I2C Interface</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="glass-card project-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="proj-img" style="background-image: url('https://images.unsplash.com/photo-1558494949-ef010cbdcc48?auto=format&fit=crop&q=80&w=600');"></div>
+                <div class="proj-content">
+                    <h3>SecureGate RFID Vault</h3>
+                    <p>Protocolo de seguridad física con autenticación por radiofrecuencia y sistema de bloqueo preventivo por fuerza bruta.</p>
+                    <div class="materials">
+                        <span>RC522 RFID Reader</span> <span>Servo MG996R</span> <span>Buzzer Activo</span> <span>EEPROM Data Storage</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./script.js"></script>
