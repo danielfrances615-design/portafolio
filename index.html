@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Especialista en Sistemas y Robótica</title>
+    <title>Sistemas & Robótica | Perfil Profesional</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;500;800&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/606/606210.png">
-    <script src="https://kit.fontawesome.com/your-code.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -19,75 +18,86 @@
     </div>
 
     <nav class="navbar">
-        <div class="nav-content liquid-glass">
-            <div class="logo">TECH<span>FOLIO</span></div>
+        <div class="nav-content glass-effect">
+            <div class="logo">TECH<span>ARCHITECT</span></div>
             <ul class="nav-links">
                 <li><a href="#home">Inicio</a></li>
-                <li><a href="#experiencia">Experiencia</a></li>
-                <li><a href="#estudios">Formación</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#experiencia">Trayectoria</a></li>
+                <li><a href="#proyectos">Laboratorio</a></li>
+                <li><a href="#contacto" class="contact-link">Contacto</a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- HERO SECTION -->
-    <main class="hero" id="home">
-        <div class="perspective-container">
-            <div class="hero-container liquid-glass" data-aos="fade-up">
-                <span class="badge">Futuro Administrador ASIR</span>
-                <h1>Tecnología en <span class="blue-gradient">Movimiento</span></h1>
-                <p>Especialista en sistemas microinformáticos, redes y telecomunicaciones con pasión por la robótica aplicada.</p>
-                <div class="hero-actions">
-                    <a href="#proyectos" class="btn-main">Ver Proyectos</a>
-                    <a href="#experiencia" class="btn-secondary">Mi Trayectoria</a>
+    <header class="hero" id="home">
+        <div class="hero-card glass-effect" data-aos="zoom-out-up">
+            <div class="status-pill"><span class="dot"></span> Especialista en Infraestructura & Hardware</div>
+            <h1>Ingeniería de <span class="text-gradient">Sistemas Críticos</span></h1>
+            <p>Especializado en la implementación de redes de alta disponibilidad, micro-soldadura avanzada y arquitectura de sistemas embebidos.</p>
+            <div class="hero-btns">
+                <a href="#proyectos" class="btn-glow">Explorar Proyectos</a>
+                <a href="#experiencia" class="btn-outline">Ver Experiencia</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="experiencia" class="section">
+        <h2 class="title" data-aos="fade-right">Experiencia Corporativa</h2>
+        <div class="timeline">
+            <!-- Llovitec -->
+            <div class="glass-card exp-box" data-aos="fade-up">
+                <div class="exp-header">
+                    <img src="https://via.placeholder.com/60/2563eb/ffffff?text=LL" alt="Llovitec" class="exp-img">
+                    <div>
+                        <h3>Senior Tech Technician | Llovitec</h3>
+                        <span class="sub">Especialista en Microelectrónica & Logística de Sistemas</span>
+                    </div>
+                </div>
+                <p>Liderazgo en el departamento de reparaciones de alta complejidad. Gestión integral de micro-soldadura SMD para dispositivos iOS/Android y optimización de flujos logísticos para partners globales como Amazon.</p>
+                <ul class="tags">
+                    <li>Soldadura Micro-SMD</li> <li>Logística Avanzada</li> <li>Soporte Nivel 2</li>
+                </ul>
+            </div>
+
+            <!-- PC Box -->
+            <div class="glass-card exp-box" data-aos="fade-up" data-aos-delay="100">
+                <div class="exp-header">
+                    <img src="https://via.placeholder.com/60/06b6d4/ffffff?text=PB" alt="PCBox" class="exp-img">
+                    <div>
+                        <h3>Systems Engineer | PC Box Alcoy</h3>
+                        <span class="sub">Infraestructura & Mantenimiento Proactivo</span>
+                    </div>
+                </div>
+                <p>Consultoría técnica para clientes corporativos. Diagnóstico de fallos críticos en hardware, despliegue de estaciones de trabajo y arquitectura de presupuestos para soluciones IT personalizadas.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="proyectos" class="section">
+        <h2 class="title" data-aos="fade-right">Proyectos R&D (AlcoyBot)</h2>
+        <div class="grid">
+            <!-- Proyecto 1 -->
+            <div class="glass-card project-card" data-aos="fade-up">
+                <div class="proj-img" style="background-image: url('https://images.unsplash.com/photo-1558346490-a72e53ae2d4f?auto=format&fit=crop&q=80&w=400');"></div>
+                <div class="proj-content">
+                    <h3>Smart Hydro-System v2.0</h3>
+                    <p>Ecosistema de riego autónomo con lógica difusa para optimización de recursos hídricos.</p>
+                    <div class="materials">
+                        <span>Arduino Nano</span> <span>Sensor Higrómetro Capacitivo</span> <span>Relay 5V</span> <span>Display I2C</span>
+                    </div>
                 </div>
             </div>
-        </div>
-    </main>
 
-    <!-- EXPERIENCIA -->
-    <section id="experiencia" class="section-padding">
-        <h2 class="section-title" data-aos="fade-right">Experiencia Profesional</h2>
-        <div class="grid-container">
-            <div class="liquid-glass card" data-aos="fade-up">
-                <h3>Llovitec</h3>
-                <span class="date">Técnico Multidisciplinar</span>
-                <p>Reparación avanzada de hardware (soldadura, pantallas, puertos de carga), gestión de logística Amazon, soporte a clientes y mantenimiento de sistemas microinformáticos.</p>
-            </div>
-            <div class="liquid-glass card" data-aos="fade-up" data-aos-delay="100">
-                <h3>PC Box Alcoy</h3>
-                <span class="date">Técnico de Soporte</span>
-                <p>Mantenimiento integral de ordenadores y periféricos, presupuestos técnicos, atención directa al cliente y resolución de averías en hardware y software.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- ESTUDIOS -->
-    <section id="estudios" class="section-padding">
-        <h2 class="section-title" data-aos="fade-right">Formación Académica</h2>
-        <div class="liquid-glass wide-card" data-aos="fade-up">
-            <ul>
-                <li><strong>ASIR:</strong> Administración de Sistemas Informáticos en Red (En curso)</li>
-                <li><strong>SMR:</strong> Grado Medio en Sistemas Microinformáticos y Redes</li>
-                <li><strong>Telecomunicaciones:</strong> Grado Medio en Instalaciones de Telecomunicaciones</li>
-                <li><strong>FP Básica:</strong> Informática y Comunicaciones</li>
-            </ul>
-        </div>
-    </section>
-
-    <!-- PROYECTOS -->
-    <section id="proyectos" class="section-padding">
-        <h2 class="section-title" data-aos="fade-right">Proyectos Destacados (AlcoyBot)</h2>
-        <div class="grid-container">
-            <div class="liquid-glass card project" data-aos="flip-left">
-                <div class="icon">🌱</div>
-                <h3>Smart Garden</h3>
-                <p>Sistema de riego automatizado con sensores de humedad, bomba de agua y feedback visual/auditivo mediante pantalla LCD y buzzers.</p>
-            </div>
-            <div class="liquid-glass card project" data-aos="flip-left" data-aos-delay="100">
-                <div class="icon">🔒</div>
-                <h3>RFID Safe Box</h3>
-                <p>Caja fuerte de alta seguridad con control de acceso por radiofrecuencia, sistema de alarma tras intentos fallidos y bloqueo temporal automático.</p>
+            <!-- Proyecto 2 -->
+            <div class="glass-card project-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="proj-img" style="background-image: url('https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&q=80&w=400');"></div>
+                <div class="proj-content">
+                    <h3>RFID Security Vault</h3>
+                    <p>Protocolo de seguridad física basado en radiofrecuencia con sistema de bloqueo por fuerza bruta.</p>
+                    <div class="materials">
+                        <span>Módulo RFID-RC522</span> <span>Servomotor MG996R</span> <span>Keypad Matricial</span> <span>Alarma Piezoeléctrica</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
