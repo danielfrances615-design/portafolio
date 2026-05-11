@@ -1,25 +1,29 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Inicializar AOS para todas las secciones
     AOS.init({
-        duration: 800,
-        once: true,
-        easing: 'ease-in-out'
+        duration: 1000,
+        easing: 'ease-out-cubic',
+        once: true
     });
 
-    const heroCard = document.querySelector('.hero-container');
+    const hero = document.querySelector('.hero-card');
     
-    // Movimiento suave y ultra-limitado (evita mareo)
+    // Movimiento ultra-suave
     document.addEventListener('mousemove', (e) => {
-        let xAxis = (window.innerWidth / 2 - e.pageX) / 100; 
-        let yAxis = (window.innerHeight / 2 - e.pageY) / 100;
+        let x = (window.innerWidth / 2 - e.pageX) / 120;
+        let y = (window.innerHeight / 2 - e.pageY) / 120;
         
-        if(heroCard) {
-            heroCard.style.transform = `rotateY(${xAxis}deg) rotateX(${-yAxis}deg)`;
+        if(hero) {
+            hero.style.transform = `rotateY(${x}deg) rotateX(${-y}deg)`;
         }
     });
 
-    // Reset al salir
-    document.addEventListener('mouseleave', () => {
-        if(heroCard) heroCard.style.transform = `rotateY(0deg) rotateX(0deg)`;
+    // Scroll suave para links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
     });
 });
